@@ -1,0 +1,32 @@
+create database archu;
+use archu;
+create table empl(
+emplo_id varchar(20),
+emplo_name varchar(20),
+emplo_designtion varchar(20),
+emplo_age int);
+select* from empl;
+insert into empl value(1,'a','hr',26);
+insert into empl value(2,'b','ds',34);
+insert into empl value(3,'c','da',32);
+insert into empl value(4,'d','se',35);
+insert into empl value('e5','t','de',45);
+insert into empl value(6,'y','au',36);
+insert into empl value(7,'f','k',47);
+insert into empl value(8,'r','lo',28);
+insert into empl value(9,'h','cl',31);
+insert into empl value(10,'v','br',40);
+select* from empl;
+delete from empl where emplo_id='7w';
+update empl set emplo_name='nandana',emplo_age=24
+where emplo_id=1;
+update empl set emplo_designtion='doctor'
+where emplo_id=2;
+select* from empl;
+delete from empl where emplo_id='e5';
+select* from empl;
+delete from empl where emplo_age=24;
+select* from empl;
+alter table empl add emplo_dept varchar(30),
+add emplo_location varchar(30);
+select* from empl;
