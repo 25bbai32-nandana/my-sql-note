@@ -1,0 +1,20 @@
+create database shriya;
+use shriya;
+select* from phones;
+
+-- how to check how many unique processor_brand is there
+select distinct(processor_brand) from phones;
+
+-- how many unique model is there
+select distinct(processor_brand) from phones;
+select* from phones;
+select count(distinct(model)) from phones;
+select* from phones;
+select count(distinct(processor_brand)) from phones;
+-- how many unique model is there
+update phones set processor_brand= "mediatek" where processor_brand= "dimensity";
+-- fnd out the data where the porice is greater than 200000
+select* from phones;
+select* from phones where price>200000;
+-- find out maximum price
+select max(price) from phones;
