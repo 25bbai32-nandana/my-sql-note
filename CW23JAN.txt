@@ -1,0 +1,20 @@
+create database MMA
+use MMA
+select* from annashri;
+select distinct(shipmode) from annashri;
+select distinct(category) from annashri;
+
+select* from annashri where category='Technology';
+select distinct(subcategory) from annashri;
+select* from annashri where subcategory='Art';
+select* from annashri where quantity>5;
+select* from annashri where category='Technology' and quantity>5;
+select max(sales) from annashri;
+select avg(sales) from annashri;
+select* from annashri where category!='Technology';
+select* from annashri where region!='Central';
+select* from annashri where quantity between 5 and 7;
+select* from annashri order by profit;
+select* from annashri order by profit desc;
+select* from annashri order by sales;
+select* from annashri where subcategory = 'paper' and 'art';
